@@ -5,30 +5,21 @@ class Stack:
         self.size = size
 
     def is_empty(self):
-        return self.top ==-1
+        return len(self.items) == 0
 
     def is_full(self):
-        return self.top==self a-1
+        return len(self.items) == size
 
     def push(self, data):
         if not self.is_full():
-            print ("the stack is full")
-        else:
-            self.top==-1
-            x=int(input("enter the data to inserted"))
-            self.st[self.top]=x
+            self.items.append(values[1])
 
     def pop(self):
         if not self.is_empty():
-            print("the stack is empty")
-        else:
-            y=self.st(self.top)
-            del self.st(self.top)
-            self.top-=1
-            return y
+            self.items.pop()
 
     def status(self):
-        for in self.st:
+        for i in self.items:
             print(i)
 
 # Do not change the following code
